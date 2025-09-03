@@ -1,0 +1,11 @@
+<h1>{{title}}</h1>
+<ul>
+  {{#each songs}}
+    <li class="song-list">
+      <img src="{{artworkUrl100}}" alt="{{trackName}} artwork" width="100" height="100">
+      <a href="/song/{{trackId}}" class="song-link"><br><strong>{{trackName}}</strong></a>
+      <p>By {{artistName}}<br></p>
+    </li>
+  {{/each}}
+</ul>
+

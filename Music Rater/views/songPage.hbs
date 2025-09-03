@@ -1,0 +1,29 @@
+<div id="song">
+    <h2>{{song.trackName}}</h1>
+    <img src="{{song.artworkUrl100}}" alt="{{song.trackName}} artwork" width="100" height="100">
+    <p>By {{song.artistName}}</p>
+
+    <form action="/submitReview" method="POST">
+        <label for="reviewSelect">Leave a review</label>
+        <select id="reviewSelect" name="rating" required>
+            <option value="">Choose an option</option>
+            <option value="5">5 stars </option>
+            <option value="4">4 stars </option>
+            <option value="3">3 stars </option>
+            <option value="2">2 stars </option>
+            <option value="1">1 star </option>
+        </select>
+
+        <input type="hidden" name="songId" value="{{song.trackId}}">
+        
+        <button type="submit">Submit</button>
+    </form>
+
+    <h4>User Reviews</h4>
+    <ul>
+      {{#each reviews}}
+        <li><strong>{{this.userid}}</strong>: {{this.rating}} stars</li>
+      {{/each}}
+    </ul>
+</div>
+

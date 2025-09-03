@@ -1,0 +1,35 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+table, th, td{
+    border: 1px solid;
+}
+/* Class Seelctors */
+.song-list p{
+    margin-top: 5px;
+}
+
+.song-list img{
+    margin-top: 20px;
+}
+
+.account-link{
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/* Id Selectors */
+#song p{
+    margin-top: 5px;
+}
+
+#viewUser{
+    margin-top: 40px;
+}

@@ -1,0 +1,22 @@
+<h2>All Users</h2>
+
+{{#if users.length}}
+  <table>
+    <thead>
+      <tr>
+        <th>User ID</th>
+        <th>Role</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each users}}
+        <tr>
+          <td>{{this.userid}}</td>
+          <td>{{this.role}}</td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+{{else}}
+  <p>No users found.</p>
+{{/if}}

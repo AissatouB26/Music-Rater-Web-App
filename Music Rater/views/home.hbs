@@ -1,0 +1,13 @@
+<h1>Welcome to Music Rater!</h1>  
+
+<form action="/search" method="GET">
+  <h3>Search for Songs</h3>
+  <input type="text" id="search" name="song" placeholder="Enter song name">
+  <button>Search</button>
+</form>
+
+{{#if isAdmin}}
+  <a href="/admin/users">
+    <button id="viewUser">View Users</button>
+  </a>
+{{/if}}
